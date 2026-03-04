@@ -12,8 +12,9 @@
         if($student_id == "" || $full_name == "" || $email == "" || $course == ""){
             $message = "Please fill in all fields.";
         }
+        
         else{
-            $sql = "INSER INTO students (student_id, full_name, email, course)
+            $sql = "INSERT INTO students (student_id, full_name, email, course)
             VALUES ('$student_id', '$full_name', '$email', '$course')";
             mysqli_query($conn, $sql);
             header("Location: students_lists.php");
@@ -28,26 +29,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Student</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <h2>Create Student Record</h2>
 
-    <div class="forms_style">
+    <div class="form_style">
         <form method="post">
-            <div class="form-group">
-                <label>ID Number</label>
+            <div class="form_group">
+                <label>ID Number</label><br>
                 <input type="text" name="student_id">
             </div>
-            <div class="form-group">
-                <label>Full Name</label>
+            <div class="form_group">
+                <label>Full Name</label><br>
                 <input type="text" name="full_name">
             </div>
-            <div class="form-group">
-                <label>Email</label>
+            <div class="form_group">
+                <label>Email</label><br>
                 <input type="email" name="email">
             </div>
-            <div class="form-group">
-                <label>Course</label>
+            <div class="form_group">
+                <label>Course</label><br>
                 <input type="text" name="course">
             </div>
             <button type="submit" name="submit">Add Student</button>

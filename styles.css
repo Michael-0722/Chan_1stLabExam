@@ -1,0 +1,88 @@
+.form_style{
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: 400px;
+}
+
+.form_group{
+    margin: 10px auto;
+    padding: 0 25px;
+}
+
+.form_group input{
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+button{
+    width: 42%;
+    padding: 10px;
+    margin-left: 25px;
+    border-radius: 4px;
+    background-color: #e3e5e3;
+}
+button:hover{
+    background-color: #c1c3c1;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    font-size: 32px;
+}
+.login_form{
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: 320px;
+}
+.login_form button{
+    width: 90%;
+    font-size: 20px;
+}
+.login_form p{
+    text-align: center;
+    color: red;
+    font-size: 24px;
+}
+.login_form label{
+    font-size: 24px;
+}
+.a_tag{
+    border: 1px solid #ccc;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    width: 1090px;
+    padding: 10px;
+    background-color: black;
+}
+
+.a_tag a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.a_tag:hover, a:hover{
+    background-color: #c1c3c1;
+    color: black;
+}
+
+.table_style{
+    width: 85%;
+    margin: 20px auto;
+}
+.table_style a{
+    display: inline;
+    ;
+}

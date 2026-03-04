@@ -9,13 +9,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Records</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <h2>Student Records</h2>
-    <a href="student_add.php">Add Student +</a>
+    <div class="a_tag"><a href="student_add.php">Add Student +</a></div>
 
-    <table border="1" cellpadding="10" cellspacing="0">
+    <table class="table_style" border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -29,11 +29,16 @@
                 <td><?php echo $s['full_name']; ?></td>
                 <td><?php echo $s['email']; ?></td>
                 <td><?php echo $s['course']; ?></td>
-                <td><a href="student_edit.php? id=<?php echo $s['student_id'] ?>">Edit</a></td>
-                <td><a href="student_delete.php? id=<?php echo $s['student_id'] ?>">Delete</a></td>
+                <td><a href="student_edit.php?id=<?php echo $s['student_id']; ?>">Edit</a>
+                <a href="student_delete.php?id=<?php echo $s['student_id']; ?>">Delete</a></td>
+                
             </tr> 
         <?php } ?>
         
     </table>
+
+    <button onclick="window.location.href='../index.php'">
+        Logout
+    </button>
 </body>
 </html>
